@@ -34,8 +34,6 @@ POINTS_CUSTOM_NAME = 'Taler'
 USE_POINTS = True
 REAL_WORLD_CURRENCY_DECIMAL_PLACES = 2
 
-
-environ['DATABASE_URL'] = 'postgresql://postgres:asdf@localhost/postgres'
 DATABASE_URL = environ.get('DATABASE_URL')
 ADMIN_USERNAME = 'admin'
 # for security, best to set admin password in an environment variable
