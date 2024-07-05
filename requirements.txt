@@ -3,3 +3,4 @@
 psycopg2>=2.8,<2.9
 otree==3.3.11
 numpy
+pandas>=1.1.5
