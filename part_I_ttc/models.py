@@ -14,9 +14,9 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
 
-    ctrq1_ttc = models.IntegerField(label='1. Wie viele Schüler:innen bewerben sich für einen Schulplatz?', min=0)
+    ctrq1_ttc = models.IntegerField(label='Wie viele Schüler:innen bewerben sich für einen Schulplatz?', min=0)
     ctrq2_ttc = models.IntegerField(
-        label='2. Sobald alle Schüler:innen an einer Schule zugelassen wurden, wie viele Plätze bleiben übrig?', min=0)
+        label='Wie viele Plätze bleiben übrig, sobald alle Schüler:innen an einer Schule zugelassen wurden?', min=0)
     time_left = models.IntegerField(initial=Constants.timer_seconds)
     ctrq3_ttc_blue = models.StringField(choices=['A', 'B', 'C', 'D'], label='')
     ctrq3_ttc_yellow = models.StringField(choices=['A', 'B', 'C', 'D'], label='')

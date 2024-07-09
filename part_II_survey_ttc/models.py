@@ -60,7 +60,7 @@ class Player(BasePlayer):
 
 
     pref_decision = models.LongStringField(
-        label='1. Wie haben Sie Ihre Entscheidung über die Präferenzlisten getroffen?')
+        label='Wie haben Sie Ihre Entscheidung über die Präferenzlisten getroffen?')
     '''truth_telling_decision = models.StringField(choices=[['yes',
                                                           'Ja, ich habe meine Präferenzlisten so erstellt, dass sie der Reihenfolge der Werte aus der Wertetabelle entsprachen.'],
                                                          ['no',
@@ -68,7 +68,7 @@ class Player(BasePlayer):
                                                 label='2. Haben Sie Ihre Präferenzlisten meistens oder immer so erstellt, dass sie der Reihenfolge der Werte aus der Wertetabelle entsprachen?',
                                                 widget=widgets.RadioSelect)'''
     truth_telling_decision = models.BooleanField(
-        label='2. Haben Sie Ihre Präferenzlisten meistens oder immer so erstellt, dass sie der Reihenfolge der Werte aus der Wertetabelle entsprachen?',
+        label='Haben Sie Ihre Präferenzlisten meistens oder immer so erstellt, dass sie der Reihenfolge der Werte aus der Wertetabelle entsprachen?',
         widget=widgets.RadioSelect,
         choices=[[True, 'Ja, ich habe meine Präferenzlisten so erstellt, dass sie der Reihenfolge der Werte aus der Wertetabelle entsprachen.'], [False, 'Nein, ich habe meine Präferenzlisten nicht so erstellt.']]
     )
@@ -81,47 +81,47 @@ class Player(BasePlayer):
     mechanism_fair = models.IntegerField(
         choices=list(range(11)),
         widget=widgets.RadioSelectHorizontal,
-        label='''3. ... für fair?'''
+        label='''... für fair?'''
     )
     mechanism_efficient = models.IntegerField(
         choices=list(range(11)),
         widget=widgets.RadioSelectHorizontal,
-        label='''4. ... für effizient?'''
+        label='''... für effizient?'''
     )
     mechanism_comprehensive = models.IntegerField(
         choices=list(range(11)),
         widget=widgets.RadioSelectHorizontal,
-        label='''5. ... für verständlich?'''
+        label='''... für verständlich?'''
     )
     trust_general = models.IntegerField(
         choices=list(range(11)),
         widget=widgets.RadioSelectHorizontal,
-        label='''6. Solange ich nicht vom Gegenteil überzeugt bin, gehe ich davon aus, dass Menschen nur die besten
+        label='''Solange ich nicht vom Gegenteil überzeugt bin, gehe ich davon aus, dass Menschen nur die besten
         Absichten haben.'''
     )
     trust_mechanism = models.IntegerField(
         choices=list(range(11)),
         widget=widgets.RadioSelectHorizontal,
-        label='''7. Ich bin davon überzeugt, dass das Zulassungsverfahren aus dem ersten Teil gut funktioniert.'''
+        label='''Ich bin davon überzeugt, dass das Zulassungsverfahren aus dem ersten Teil gut funktioniert.'''
     )
     trust_institutions_gvmnt = models.IntegerField(
         choices=list(range(11)),
         widget=widgets.RadioSelectHorizontal,
-        label='''8. Im Allgemeinen habe ich Vertrauen in die Regierung.'''
+        label='''Im Allgemeinen habe ich Vertrauen in die Regierung.'''
     )
     trust_institutions_city = models.IntegerField(
         choices=list(range(11)),
         widget=widgets.RadioSelectHorizontal,
-        label='''9. Im Allgemeinen habe ich Vertrauen in städtischen Behörden.'''
+        label='''Im Allgemeinen habe ich Vertrauen in städtischen Behörden.'''
     )
     trust_institutions_educ = models.IntegerField(
         choices=list(range(11)),
         widget=widgets.RadioSelectHorizontal,
-        label='''10. Im Allgemeinen habe ich Vertrauen in Bildungsbehörden.'''
+        label='''Im Allgemeinen habe ich Vertrauen in Bildungsbehörden.'''
     )
-    crt_bat = models.DecimalField(max_digits=4, decimal_places=2, label='11. Ein Schläger und ein Ball kosten insgesamt 1,10€. Der Schläger kostet 1€ mehr als der Ball. Wie viel kostet der Ball?')
-    crt_widget = models.DecimalField(max_digits=4, decimal_places=2, label='12. Wenn 5 Maschinen 5 Minuten brauchen um 5 Produkte herzustellen, wie lange benötigen dann 100 Maschinen, um 100 Produkte herzustellen?')
-    crt_lake = models.DecimalField(max_digits=4, decimal_places=2, label='13. In einem See wachsen Seerosen, die sich jeden Tag verdoppeln. Wenn es 48 Tage dauert, bis der ganze See bedeckt ist, wie lange dauert es, bis die Seerosen die Hälfte des Sees bedecken?')
+    crt_bat = models.DecimalField(max_digits=4, decimal_places=2, label='Ein Schläger und ein Ball kosten insgesamt 1,10€. Der Schläger kostet 1€ mehr als der Ball. Wie viel kostet der Ball?')
+    crt_widget = models.DecimalField(max_digits=4, decimal_places=2, label='Wenn 5 Maschinen 5 Minuten brauchen um 5 Produkte herzustellen, wie lange benötigen dann 100 Maschinen, um 100 Produkte herzustellen?')
+    crt_lake = models.DecimalField(max_digits=4, decimal_places=2, label='In einem See wachsen Seerosen, die sich jeden Tag verdoppeln. Wenn es 48 Tage dauert, bis der ganze See bedeckt ist, wie lange dauert es, bis die Seerosen die Hälfte des Sees bedecken?')
     gender = models.StringField(choices=[['female', 'Weiblich'], ['male', 'Männlich'], ['diverse', 'Divers'],
                                          ['no_gender', 'Ich identifiziere mich mit keinem Geschlecht']],
                                 label='Mit welchem Geschlecht identifizieren Sie sich?',
@@ -184,16 +184,13 @@ class Player(BasePlayer):
                                     blank=True,
                                   label='In welchem Fachsemester sind Sie eingeschrieben?')
     math_grade = models.FloatField(label='Was war Ihre letzte Mathenote?')
-    abi_grade = models.FloatField(label='Mit welcher Note haben Sie Ihr Abitur abgeschlossen?')
+    abi_grade = models.FloatField(label='Welche Note haben Sie in Ihrem höchsten Schulabschluss erzielt (z.B. Abitur, Mittlere Reife, ...)?')
     risk = models.IntegerField(
         choices=list(range(11)),
         widget=widgets.RadioSelectHorizontal,
         label='''
         Wie nehmen Sie sich selbst wahr? 
-        Sind Sie generell ein Mensch, der voll und ganz bereit ist, Risiken einzugehen, oder versuchen Sie eher, Risiken zu vermeiden?
-
-        Bitte kreuzen Sie ein Kästchen auf der Skala an, wobei der Wert 0 bedeutet: "nicht bereit, Risiken einzugehen" und der 
-        Wert 10 bedeutet: "voll und ganz bereit, Risiken einzugehen".''')
+        Sind Sie generell ein Mensch, der voll und ganz bereit ist, Risiken einzugehen, oder versuchen Sie eher, Risiken zu vermeiden?''')
 
 
 
