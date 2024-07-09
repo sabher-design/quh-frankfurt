@@ -74,6 +74,13 @@ SESSION_CONFIGS = [
         # app sequence session 1:
         app_sequence=['part_0_intro_da', 'part_I_da', 'SHda11', 'SHda7', 'SHda1', 'SHda12', 'SHda19', 'SHda14', 'SHda9', 'SHda5', 'SHda13', 'SHda17',
         'SHda3', 'SHda15', 'SHda20', 'SHda4', 'SHda10', 'SHda16', 'SHda18', 'SHda6', 'SHda2', 'SHda8', 'part_II_survey_da']
+    ),
+    dict(
+        name='SH_da_adv_test',
+        display_name="SH_da_adv_test",
+        num_demo_participants=4,
+        # app sequence test:
+        app_sequence=['SHda1_adv']
     )
 ]
 
