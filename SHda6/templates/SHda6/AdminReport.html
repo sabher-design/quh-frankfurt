@@ -78,7 +78,7 @@
         <table class="instr-table">
             <thead>
             <tr>
-                <th colspan="{{ table_nr_tds_priorities }}">Priorities of Resources:</th>
+                <th colspan="{{ table_nr_tds_prio6 }}">Priorities of Resources:</th>
             </tr>
             <tr>
                 <th>Group ID</th>
@@ -89,11 +89,11 @@
             </thead>
             <tbody>
 
-            {% for p, prio in priorities_all_players %}
+            {% for p, prio6 in prio6_all_players %}
             <tr>
                 <td>{{ p.id_in_group }}</td>
 
-                {% for p in prio %}
+                {% for p in prio6 %}
                 <td>{{ p }}</td>
                 {% endfor %}
             </tr>

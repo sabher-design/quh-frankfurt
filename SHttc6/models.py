@@ -30,7 +30,7 @@ class Subsession(BaseSubsession):
     # THINGS TO DO BEFORE THE SESSION STARTS  =================================================== #
     # =========================================================================================== #
     def creating_session(self):
-        print(f"Starting session for SHttc5: {self.__class__.__name__}")
+        print(f"Starting session for SHttc6: {self.__class__.__name__}")
 
         # Reset other participant.vars as needed
         # CREATE INDICES FOR MOST IMPORTANT VARS ================================================ #

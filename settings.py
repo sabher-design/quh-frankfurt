@@ -13,74 +13,136 @@ SESSION_CONFIG_DEFAULTS = dict(
 
 SESSION_CONFIGS = [
     dict(
-        name='SH_ttc_test',
-        display_name="SH_t_test",
+        name='ttc_test_no_apps',
+        display_name="ttc_test_no_apps",
         num_demo_participants=12,
         # app sequence test:
         app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'part_II_survey_ttc']
     ),
     dict(
-        name='SH_da_test',
-        display_name="SH_d_test",
+        name='da_test_no_apps',
+        display_name="da_test_no_apps",
         num_demo_participants=16,
         # app sequence test:
         # app sequence session 1:
         app_sequence=['part_0_intro_da', 'part_I_da', 'part_II_survey_da']
     ),
     dict(
-        name='SH_ttc_labtest',
-        display_name="SH_labtest",
+        name='ttc_labtest',
+        display_name="ttc_labtest",
         num_demo_participants=12,
         # app sequence session 1:
         app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc11', 'SHttc7', 'SHttc1', 'SHttc12', 'SHttc19', 'SHttc14', 'SHttc9', 'SHttc5', 'SHttc13', 'SHttc17',
         'SHttc3', 'SHttc15', 'SHttc20', 'SHttc4', 'SHttc10', 'SHttc16', 'SHttc18', 'SHttc6', 'SHttc2', 'SHttc8', 'part_II_survey_ttc']
     ),
     dict(
-        name='SH_da_labtest',
-        display_name="SH_da_labtest",
-        num_demo_participants=16,
-        # app sequence session 1:
-        app_sequence=['part_0_intro_da', 'part_I_da', 'SHda11', 'SHda7', 'SHda1', 'SHda12', 'SHda19', 'SHda14', 'SHda9', 'SHda5', 'SHda13', 'SHda17',
-        'SHda3', 'SHda15', 'SHda20', 'SHda4', 'SHda10', 'SHda16', 'SHda18', 'SHda6', 'SHda2', 'SHda8', 'part_II_survey_da']
-    ),
-    dict(
-        name='SH_ttc_addtest1',
-        display_name="SH_ttc_addtest1",
+        name='ttc_addtest12',
+        display_name="ttc_addtest12",
         num_demo_participants=12,
         # app sequence session 1:
         app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc11', 'SHttc7', 'SHttc1', 'SHttc12', 'SHttc19', 'SHttc14', 'SHttc9', 'SHttc5', 'SHttc13', 'SHttc17',
         'SHttc3', 'SHttc15', 'SHttc20', 'SHttc4', 'SHttc10', 'SHttc16', 'SHttc18', 'SHttc6', 'SHttc2', 'SHttc8', 'part_II_survey_ttc']
     ),
     dict(
-        name='SH_da_addtest1',
-        display_name="SH_da_addtest1",
+        name='ttc_addtest16',
+        display_name="ttc_addtest16",
+        num_demo_participants=16,
+        # app sequence session 1:
+        app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc11', 'SHttc7', 'SHttc1', 'SHttc12', 'SHttc19', 'SHttc14',
+                      'SHttc9', 'SHttc5', 'SHttc13', 'SHttc17',
+                      'SHttc3', 'SHttc15', 'SHttc20', 'SHttc4', 'SHttc10', 'SHttc16', 'SHttc18', 'SHttc6', 'SHttc2',
+                      'SHttc8', 'part_II_survey_ttc']
+    ),
+    dict(
+        name='da_labtest',
+        display_name="da_labtest",
+        num_demo_participants=16,
+        # app sequence session 1:
+        app_sequence=['part_0_intro_da', 'part_I_da', 'SHda11', 'SHda7', 'SHda1', 'SHda12', 'SHda19', 'SHda14', 'SHda9',
+                      'SHda5', 'SHda13', 'SHda17',
+                      'SHda3', 'SHda15', 'SHda20', 'SHda4', 'SHda10', 'SHda16', 'SHda18', 'SHda6', 'SHda2', 'SHda8',
+                      'part_II_survey_da']
+    ),
+    dict(
+        name='da_addtest16',
+        display_name="da_addtest16",
         num_demo_participants=16,
         # app sequence session 1:
         app_sequence=['part_0_intro_da', 'part_I_da', 'SHda11', 'SHda7', 'SHda1', 'SHda12', 'SHda19', 'SHda14', 'SHda9', 'SHda5', 'SHda13', 'SHda17',
         'SHda3', 'SHda15', 'SHda20', 'SHda4', 'SHda10', 'SHda16', 'SHda18', 'SHda6', 'SHda2', 'SHda8', 'part_II_survey_da']
     ),
     dict(
-        name='SH_ttc_addtest2',
-        display_name="SH_ttc_addtest2",
+        name='da_addtest12',
+        display_name="da_addtest12",
         num_demo_participants=12,
         # app sequence session 1:
-        app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc11', 'SHttc7', 'SHttc1', 'SHttc12', 'SHttc19', 'SHttc14', 'SHttc9', 'SHttc5', 'SHttc13', 'SHttc17',
-        'SHttc3', 'SHttc15', 'SHttc20', 'SHttc4', 'SHttc10', 'SHttc16', 'SHttc18', 'SHttc6', 'SHttc2', 'SHttc8', 'part_II_survey_ttc']
-    ),
-    dict(
-        name='SH_da_addtest2',
-        display_name="SH_da_addtest2",
-        num_demo_participants=16,
-        # app sequence session 1:
         app_sequence=['part_0_intro_da', 'part_I_da', 'SHda11', 'SHda7', 'SHda1', 'SHda12', 'SHda19', 'SHda14', 'SHda9', 'SHda5', 'SHda13', 'SHda17',
         'SHda3', 'SHda15', 'SHda20', 'SHda4', 'SHda10', 'SHda16', 'SHda18', 'SHda6', 'SHda2', 'SHda8', 'part_II_survey_da']
     ),
     dict(
-        name='SH_da_adv_test',
-        display_name="SH_da_adv_test",
-        num_demo_participants=4,
+        name='ttc_adv_labtest',
+        display_name="ttc_adv_labtest",
+        num_demo_participants=12,
+        # app sequence session 1:
+        app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc11_adv', 'SHttc7_adv', 'SHttc1_adv', 'SHttc12_adv',
+                      'SHttc19_adv', 'SHttc14_adv', 'SHttc9_adv', 'SHttc5_adv', 'SHttc13_adv', 'SHttc17_adv',
+                      'SHttc3_adv', 'SHttc15_adv', 'SHttc20_adv', 'SHttc4_adv', 'SHttc10_adv', 'SHttc16_adv', 'SHttc18_adv',
+                      'SHttc6_adv', 'SHttc2_adv', 'SHttc8_adv', 'part_II_survey_ttc']
+    ),
+    dict(
+        name='ttc_adv_addtest12',
+        display_name="ttc_adv_addtest12",
+        num_demo_participants=12,
+        # app sequence session 1:
+        app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc11_adv', 'SHttc7_adv', 'SHttc1_adv', 'SHttc12_adv',
+                      'SHttc19_adv', 'SHttc14_adv', 'SHttc9_adv', 'SHttc5_adv', 'SHttc13_adv', 'SHttc17_adv',
+                      'SHttc3_adv', 'SHttc15_adv', 'SHttc20_adv', 'SHttc4_adv', 'SHttc10_adv', 'SHttc16_adv',
+                      'SHttc18_adv',
+                      'SHttc6_adv', 'SHttc2_adv', 'SHttc8_adv', 'part_II_survey_ttc']
+    ),
+    dict(
+        name='ttc_adv_addtest16',
+        display_name="ttc_adv_addtest16",
+        num_demo_participants=16,
+        # app sequence session 1:
+        app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc11_adv', 'SHttc7_adv', 'SHttc1_adv', 'SHttc12_adv',
+                      'SHttc19_adv', 'SHttc14_adv', 'SHttc9_adv', 'SHttc5_adv', 'SHttc13_adv', 'SHttc17_adv',
+                      'SHttc3_adv', 'SHttc15_adv', 'SHttc20_adv', 'SHttc4_adv', 'SHttc10_adv', 'SHttc16_adv',
+                      'SHttc18_adv',
+                      'SHttc6_adv', 'SHttc2_adv', 'SHttc8_adv', 'part_II_survey_ttc']
+    ),
+    dict(
+        name='da_adv_labtest',
+        display_name="da_adv_labtest",
+        num_demo_participants=16,
         # app sequence test:
-        app_sequence=['SHda1_adv']
+        app_sequence=['part_0_intro_da', 'part_I_da', 'SHda11_adv', 'SHda7_adv', 'SHda1_adv', 'SHda12_adv', 'SHda19_adv',
+        'SHda14_adv', 'SHda9_adv', 'SHda5_adv', 'SHda13_adv', 'SHda17_adv', 'SHda3_adv', 'SHda15_adv', 'SHda20_adv',
+        'SHda4_adv', 'SHda10_adv', 'SHda16_adv', 'SHda18_adv', 'SHda6_adv', 'SHda2_adv', 'SHda8_adv', 'part_II_survey_da']
+    ),
+    dict(
+        name='da_adv_addtest16',
+        display_name="da_adv_addtest16",
+        num_demo_participants=16,
+        # app sequence test:
+        app_sequence=['part_0_intro_da', 'part_I_da', 'SHda11_adv', 'SHda7_adv', 'SHda1_adv', 'SHda12_adv',
+                      'SHda19_adv',
+                      'SHda14_adv', 'SHda9_adv', 'SHda5_adv', 'SHda13_adv', 'SHda17_adv', 'SHda3_adv', 'SHda15_adv',
+                      'SHda20_adv',
+                      'SHda4_adv', 'SHda10_adv', 'SHda16_adv', 'SHda18_adv', 'SHda6_adv', 'SHda2_adv', 'SHda8_adv',
+                      'part_II_survey_da']
+    ),
+    dict(
+        name='da_adv_addtest12',
+        display_name="da_adv_addtest12",
+        num_demo_participants=12,
+        # app sequence test:
+        app_sequence=['part_0_intro_da', 'part_I_da', 'SHda11_adv', 'SHda7_adv', 'SHda1_adv', 'SHda12_adv',
+                      'SHda19_adv',
+                      'SHda14_adv', 'SHda9_adv', 'SHda5_adv', 'SHda13_adv', 'SHda17_adv', 'SHda3_adv', 'SHda15_adv',
+                      'SHda20_adv',
+                      'SHda4_adv', 'SHda10_adv', 'SHda16_adv', 'SHda18_adv', 'SHda6_adv', 'SHda2_adv', 'SHda8_adv',
+                      'part_II_survey_da']
     )
 ]
 
