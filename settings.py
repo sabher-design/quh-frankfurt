@@ -31,9 +31,10 @@ SESSION_CONFIGS = [
         name='ttc_labtest',
         display_name="ttc_labtest",
         num_demo_participants=12,
+        #sessID=31xit56p,
         # app sequence session 1:
         app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc11', 'SHttc7', 'SHttc1', 'SHttc12', 'SHttc19', 'SHttc14', 'SHttc9', 'SHttc5', 'SHttc13', 'SHttc17',
-        'SHttc3', 'SHttc15', 'SHttc20', 'SHttc4', 'SHttc10', 'SHttc16', 'SHttc18', 'SHttc6', 'SHttc2', 'SHttc8', 'part_II_survey_ttc']
+        'SHttc3', 'SHttc15', 'SHttc20', 'SHttc4', 'SHttc10', 'SHttc16', 'SHttc18', 'SHttc6', 'SHttc2', 'SHttc8', 'part_II_survey_ttc', 'payment']
     ),
     dict(
         name='ttc_addtest12',

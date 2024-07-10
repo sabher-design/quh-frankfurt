@@ -82,7 +82,9 @@ class Payoff(Page):
 
 
 page_sequence = [SurveyStart, SurveyStrategies, SurveyMechanism, SurveyTrust, SurveyEconPrefsLoss, SurveyEconPrefsRisk,
-                 SurveyDemographics, Payoff]
+                 CognitiveReflectionTest, SurveyDemographics, Payoff]
+
+
 
 #page_sequence = [Payoff]
 

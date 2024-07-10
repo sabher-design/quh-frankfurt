@@ -119,6 +119,9 @@ class Player(BasePlayer):
         widget=widgets.RadioSelectHorizontal,
         label='''Im Allgemeinen habe ich Vertrauen in Bildungsbehörden.'''
     )
+    crt_bat = models.DecimalField(max_digits=4, decimal_places=2, label='Ein Schläger und ein Ball kosten insgesamt 1,10 €. Der Schläger kostet 1 € mehr als der Ball. Wie viel kostet der Ball?')
+    crt_widget = models.DecimalField(max_digits=4, decimal_places=2, label='Wenn 5 Maschinen 5 Minuten brauchen um 5 Produkte herzustellen, wie lange benötigen dann 100 Maschinen, um 100 Produkte herzustellen?')
+    crt_lake = models.DecimalField(max_digits=4, decimal_places=2, label='In einem See wachsen Seerosen, die sich jeden Tag verdoppeln. Wenn es 48 Tage dauert, bis der ganze See bedeckt ist, wie lange dauert es, bis die Seerosen die Hälfte des Sees bedecken?')
     gender = models.StringField(choices=[['female', 'Weiblich'], ['male', 'Männlich'], ['diverse', 'Divers'],
                                          ['no_gender', 'Ich identifiziere mich mit keinem Geschlecht']],
                                 label='Mit welchem Geschlecht identifizieren Sie sich?',
