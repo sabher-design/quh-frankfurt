@@ -81,13 +81,23 @@ class Decision(Page):
     # METHOD: =================================================================================== #
     # CONTROL PREFS: PREFERENCES MUST BE UNIQUE ================================================= #
     # =========================================================================================== #
-    def error_message(self, values):
+    '''def error_message(self, values):
         indices = [list(i) for i in zip(*self.participant.vars['form_fields_plus_index'])][0]
         form_fields = [list(i) for i in zip(*self.participant.vars['form_fields_plus_index'])][1]
         sum_of_prefs = sum([values[i] for i in form_fields])
 
         if sum_of_prefs != sum(indices):
-            return 'Ihre Präferenzen müssen von 1 bis %s angegeben werden!' % (indices[-1])
+            return 'Ihre Präferenzen müssen von 1 bis %s angegeben werden!' % (indices[-1])'''
+
+    def error_message(self, values):
+        indices = [list(i) for i in zip(*self.participant.vars['form_fields_plus_index'])][0]
+        form_fields = [list(i) for i in zip(*self.participant.vars['form_fields_plus_index'])][1]
+        preferences = [values[i] for i in form_fields]
+
+        # Ensure each index is used exactly once
+        if sorted(preferences) != list(range(1, len(indices) + 1)):
+            return 'Ihre Präferenzen müssen von 1 bis %s angegeben werden!' % (len(indices))
+
 
 
 class ResultsWaitPage(WaitPage):

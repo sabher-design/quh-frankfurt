@@ -28,6 +28,22 @@ SESSION_CONFIGS = [
         app_sequence=['part_0_intro_da', 'part_I_da', 'part_II_survey_da']
     ),
     dict(
+        name='ttc_algo_fix',
+        display_name="ttc_algo_fix",
+        num_demo_participants=4,
+        #sessID=31xit56p,
+        # app sequence session 1:
+        app_sequence=['SHttc3', 'SHttc15', 'SHttc20', 'part_II_survey_ttc']
+    ),
+    dict(
+        name='da_algo_fix',
+        display_name="ttc_algo_fix",
+        num_demo_participants=4,
+        # sessID=31xit56p,
+        # app sequence session 1:
+        app_sequence=['SHda3', 'SHda15', 'SHda20', 'part_II_survey_da']
+    ),
+    dict(
         name='ttc_labtest',
         display_name="ttc_labtest",
         num_demo_participants=12,
