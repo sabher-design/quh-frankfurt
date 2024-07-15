@@ -112,7 +112,7 @@ class Player(BasePlayer):
     trust_institutions_city = models.IntegerField(
         choices=list(range(11)),
         widget=widgets.RadioSelectHorizontal,
-        label='''Im Allgemeinen habe ich Vertrauen in städtischen Behörden.'''
+        label='''Im Allgemeinen habe ich Vertrauen in städtische Behörden.'''
     )
     trust_institutions_educ = models.IntegerField(
         choices=list(range(11)),
@@ -190,7 +190,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelectHorizontal,
         label='''
         Wie nehmen Sie sich selbst wahr? 
-        Sind Sie generell ein Mensch, der voll und ganz bereit ist, Risiken einzugehen, oder versuchen Sie eher, Risiken zu vermeiden?''')
+        Sind Sie generell ein Mensch, der voll und ganz bereit ist, Risiken einzugehen (10), oder versuchen Sie eher, Risiken zu vermeiden (0)?''')
 
 
 
