@@ -57,6 +57,19 @@ class p7b_ctrq_2(Page):
             'timeout_seconds': self.timeout_seconds
         }
 
+class p7b_ctrq_2_correct(Page):
+    def is_displayed(self):
+        if self.player.ctrq3_ttc_blue=='A' and self.player.ctrq3_ttc_yellow=='C' and self.player.ctrq3_ttc_orange=='D' and self.player.ctrq3_ttc_purple=='B':
+            return True
+        else:
+            return False
+
+class p7b_ctrq_2_false(Page):
+    def is_displayed(self):
+        if self.player.ctrq3_ttc_blue!='A' or self.player.ctrq3_ttc_yellow!='C' or self.player.ctrq3_ttc_orange!='D' or self.player.ctrq3_ttc_purple!='B':
+            return True
+        else:
+            return False
 
 class p7b_mc(Page):
     form_model = 'player'
@@ -68,4 +81,4 @@ class p8b_info_decision_start(Page):
 
 
 page_sequence = [p5b_mechanism, p6b_example, p7b_ctrq_1, p7b_ctrq_1_correct, p7b_ctrq_1_false0, p7b_ctrq_1_false4,
-                 p7b_ctrq_1_false_both, p7b_ctrq_2, p7b_mc, p8b_info_decision_start]
+                 p7b_ctrq_1_false_both, p7b_ctrq_2, p7b_ctrq_2_correct, p7b_ctrq_2_false, p7b_mc, p8b_info_decision_start]
