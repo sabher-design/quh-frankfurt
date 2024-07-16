@@ -13,6 +13,24 @@ SESSION_CONFIG_DEFAULTS = dict(
 
 SESSION_CONFIGS = [
     dict(
+        name='ttc_costtest',
+        display_name="ttc_costtest",
+        num_demo_participants=4,
+        # expShortName='',
+        # expId='',
+        # sessionId='',
+        app_sequence=['SHttc3', 'SHttc11', 'SHttc18', 'SHttc9', 'SHttc8']
+    ),
+    dict(
+        name='da_costtest',
+        display_name="da_costtest",
+        num_demo_participants=4,
+        # expShortName='',
+        # expId='',
+        # sessionId='',
+        app_sequence=['SHda3', 'SHda11', 'SHda18', 'SHda9', 'SHda8']
+    ),
+    dict(
         name='ttc_test_no_apps',
         display_name="ttc_test_no_apps",
         num_demo_participants=12,
@@ -28,12 +46,10 @@ SESSION_CONFIGS = [
         name='ttc_sequence1',
         display_name="ttc_sequence1",
         num_demo_participants=12,
-        #expShortName='',
-        #expId='',
-        #sessionId='',
-        app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc11', 'SHttc7', 'SHttc1', 'SHttc12', 'SHttc19', 'SHttc14',
-        'SHttc9', 'SHttc5', 'SHttc13', 'SHttc17', 'SHttc3', 'SHttc15', 'SHttc20', 'SHttc4', 'SHttc10', 'SHttc16',
-        'SHttc18', 'SHttc6', 'SHttc2', 'SHttc8', 'part_II_survey_ttc1', 'payment']
+        expShortName='',
+        expId='',
+        sessionId='',
+        app_sequence=['SHttc3', 'part_II_survey_ttc1', 'payment']
     ),
     dict(
         name='da_sequence1',
