@@ -20,9 +20,10 @@ class HrootID(Page):
 
 
 class Payoff(Page):
+
     def vars_for_template(self):
         context = {
-            'payoff_plus_participation_fee': self.participant.payoff_plus_participation_fee(),
+            'payoff_plus_participation_fee': self.participant.vars['SHttc3_payoff_final'],
             'paymentURL': self.player.create_paymentURL()}
         return context
 

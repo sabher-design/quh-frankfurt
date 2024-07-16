@@ -48,7 +48,7 @@ SESSION_CONFIGS = [
         num_demo_participants=12,
         expShortName='',
         expId='',
-        sessionId='',
+        sessId='',
         app_sequence=['SHttc3', 'part_II_survey_ttc1', 'payment']
     ),
     dict(

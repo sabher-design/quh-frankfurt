@@ -70,7 +70,7 @@ class Player(BasePlayer):
         expId = self.session.config['expId']
         sessId = self.session.config['sessId']
         pid = self.participant.label
-        final_payoff = float(self.participant.payoff_plus_participation_fee())
+        final_payoff = float(self.participant.vars['SHttc3_payoff_final'])
         paymentURL = PayoutURLGenerator(expShortName,
                                         expId,
                                         sessId,
