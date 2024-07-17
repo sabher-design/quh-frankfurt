@@ -25,6 +25,24 @@ SESSION_CONFIGS = [
         app_sequence=['part_0_intro_da', 'part_I_da', 'part_II_survey_da1']
     ),
     dict(
+        name='ttc_sequence_test',
+        display_name="ttc_sequence_test",
+        num_demo_participants=4,
+        expShortName='',
+        expId='',
+        sessId='',
+        app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc3', 'part_II_survey_ttc', 'payment_sequence1_ttc']
+    ),
+    dict(
+        name='da_sequence_test',
+        display_name="da_sequence_test",
+        num_demo_participants=4,
+        expShortName='',
+        expId='',
+        sessId='',
+        app_sequence=['part_0_intro_da', 'part_I_da', 'SHda3', 'part_II_survey_da', 'payment_sequence1_da']
+    ),
+    dict(
         name='ttc_sequence1',
         display_name="ttc_sequence1",
         num_demo_participants=12,
@@ -38,7 +56,7 @@ SESSION_CONFIGS = [
     dict(
         name='da_sequence1',
         display_name="da_sequence1",
-        num_demo_participants=16,
+        num_demo_participants=12,
         expShortName='',
         expId='',
         sessId='',
