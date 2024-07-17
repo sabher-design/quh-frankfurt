@@ -25,7 +25,7 @@ doc = ''
 
 
 class Constants(BaseConstants):
-    name_in_url = 'part_II_survey_ttc1'
+    name_in_url = 'part_II_survey_ttc'
     players_per_group = None
     num_rounds = 1
     loss = [2, 3, 4, 5, 6, 7] #read_csv_stimuli()

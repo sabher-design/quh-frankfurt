@@ -46,6 +46,7 @@ SESSION_CONFIGS = [
                       'SHda5', 'SHda13', 'SHda17',
                       'SHda3', 'SHda15', 'SHda20', 'SHda4', 'SHda10', 'SHda16', 'SHda18', 'SHda6', 'SHda2', 'SHda8',
                       'part_II_survey_da', 'payment_sequence1_da']
+    ),
     dict(
         name='ttc_sequence1_p',
         display_name="ttc_sequence1_p",
