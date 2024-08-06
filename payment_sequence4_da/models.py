@@ -19,7 +19,7 @@ Your app description
 
 
 class Constants(BaseConstants):
-    name_in_url = 'payment_da2'
+    name_in_url = 'payment_sequence4_da'
     players_per_group = None
     num_rounds = 1
 
@@ -70,7 +70,7 @@ class Player(BasePlayer):
         expId = self.session.config['expId']
         sessId = self.session.config['sessId']
         pid = self.participant.label
-        final_payoff = float(self.participant.vars['SHda11_payoff_final'])
+        final_payoff = float(self.participant.vars['SHda9_payoff_final'])
         paymentURL = PayoutURLGenerator(expShortName,
                                         expId,
                                         sessId,

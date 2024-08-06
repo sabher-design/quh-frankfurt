@@ -16,13 +16,13 @@ SESSION_CONFIGS = [
         name='ttc_test_no_apps',
         display_name="ttc_test_no_apps",
         num_demo_participants=12,
-        app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'part_II_survey_ttc1']
+        app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'part_II_survey_ttc']
     ),
     dict(
         name='da_test_no_apps',
         display_name="da_test_no_apps",
         num_demo_participants=12,
-        app_sequence=['part_0_intro_da', 'part_I_da', 'part_II_survey_da1']
+        app_sequence=['part_0_intro_da', 'part_I_da', 'part_II_survey_da']
     ),
     dict(
         name='ttc_sequence_test',
@@ -78,7 +78,7 @@ SESSION_CONFIGS = [
         app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc11_adv', 'SHttc7_adv', 'SHttc1_adv', 'SHttc12_adv',
                       'SHttc19_adv', 'SHttc14_adv', 'SHttc9_adv', 'SHttc5_adv', 'SHttc13_adv', 'SHttc17_adv',
                       'SHttc3_adv', 'SHttc15_adv', 'SHttc20_adv', 'SHttc4_adv', 'SHttc10_adv', 'SHttc16_adv', 'SHttc18_adv',
-                      'SHttc6_adv', 'SHttc2_adv', 'SHttc8_adv', 'part_II_survey_ttc_adv', 'payment_sequence1_ttc_adv']
+                      'SHttc6_adv', 'SHttc2_adv', 'SHttc8_adv', 'part_II_survey_ttc', 'payment_sequence1_ttc_adv']
     ),
     dict(
         name='da_adv_sequence1',
@@ -89,7 +89,7 @@ SESSION_CONFIGS = [
         sessId='',
         app_sequence=['part_0_intro_da', 'part_I_da', 'SHda11_adv', 'SHda7_adv', 'SHda1_adv', 'SHda12_adv', 'SHda19_adv',
         'SHda14_adv', 'SHda9_adv', 'SHda5_adv', 'SHda13_adv', 'SHda17_adv', 'SHda3_adv', 'SHda15_adv', 'SHda20_adv',
-        'SHda4_adv', 'SHda10_adv', 'SHda16_adv', 'SHda18_adv', 'SHda6_adv', 'SHda2_adv', 'SHda8_adv', 'part_II_survey_da_adv',
+        'SHda4_adv', 'SHda10_adv', 'SHda16_adv', 'SHda18_adv', 'SHda6_adv', 'SHda2_adv', 'SHda8_adv', 'part_II_survey_da',
         'payment_sequence1_da_adv']
     ),
 # app_sequence2 app_sequence=['SHttc7', 'SHttc12', 'SHttc19', 'SHttc15', 'SHttc9', 'SHttc5', 'SHttc4', 'SHttc6', 'SHttc20', 'SHttc16'

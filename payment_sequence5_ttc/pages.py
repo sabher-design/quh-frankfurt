@@ -23,7 +23,7 @@ class Payoff(Page):
 
     def vars_for_template(self):
         context = {
-            'payoff_plus_participation_fee': self.participant.vars['SHttc3_payoff_final'],
+            'payoff_plus_participation_fee': self.participant.vars['SHttc8_payoff_final'],
             'paymentURL': self.player.create_paymentURL()}
         return context
 
