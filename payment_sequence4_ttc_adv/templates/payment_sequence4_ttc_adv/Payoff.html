@@ -1,0 +1,21 @@
+{% extends "global/Page.html" %}
+
+{% load otree %}
+
+{% block content %}
+
+<p>
+Vielen Dank für Ihre Teilnahme an dem Experiment und der Umfrage!
+
+    <br>
+    <br>
+
+Für die Auszahlung wurde Runde 11 zufällig ausgewählt. Ihre Auszahlung aus Runde 11 beträgt {{participant.vars.SHttc9_adv_payoff}} ECU,
+das entspricht {{participant.vars.SHttc9_adv_payoff_half}} €.
+Zusammen mit der Grundvergütung von 6 € ergibt sich eine Auszahlung von {{participant.vars.SHttc9_adv_payoff_final}} €.
+</p>
+
+
+<h1>Das Experiment wurde beendet. Ihre Auszahlung beträgt {{payoff_plus_participation_fee}}. Bitte klicken Sie hier um Ihre Auszahlung zu erhalten: </h1>
+<a href="{{paymentURL}}" class="btn btn-primary btn-block btn-lg" role="button">Zur Auszahlungsseite</a>
+{% endblock %}
