@@ -120,7 +120,7 @@ class Results(Page):
         base_payoff = float(self.player.payoff)
 
         # Calculate half of the payoff, formatted to two decimal places
-        half_payoff = base_payoff * 0.65
+        half_payoff = base_payoff * 0.5
 
         # Calculate the final payoff with show-up fee, formatted to two decimal places
         final_payoff = half_payoff + 6
