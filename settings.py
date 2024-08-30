@@ -46,29 +46,6 @@ SESSION_CONFIGS = [
 # 'SHttc3', 'SHttc15', 'SHttc20', 'SHttc4', 'SHttc10', 'SHttc16', 'SHttc18', 'SHttc6', 'SHttc2', 'SHttc8']
 # payoff round: 11 --> SHttc3
     dict(
-        name='ttc_sequence1',
-        display_name="ttc_sequence1",
-        num_demo_participants=12,
-        expShortName='quh',
-        expId='18',
-        sessId='159',
-        app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc11', 'SHttc7', 'SHttc1', 'SHttc12', 'SHttc19', 'SHttc14', 'SHttc9',
-                      'SHttc5', 'SHttc13', 'SHttc17', 'SHttc3', 'SHttc15', 'SHttc20', 'SHttc4', 'SHttc10', 'SHttc16',
-                      'SHttc18', 'SHttc6', 'SHttc2', 'SHttc8','part_II_survey_ttc', 'payment_sequence1_ttc']
-    ),
-    dict(
-        name='ttc_adv_sequence1',
-        display_name="ttc_adv_sequence1",
-        num_demo_participants=12,
-        expShortName='quh',
-        expId='18',
-        sessId='159',
-        app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc11_adv', 'SHttc7_adv', 'SHttc1_adv', 'SHttc12_adv',
-                      'SHttc19_adv', 'SHttc14_adv', 'SHttc9_adv', 'SHttc5_adv', 'SHttc13_adv', 'SHttc17_adv',
-                      'SHttc3_adv', 'SHttc15_adv', 'SHttc20_adv', 'SHttc4_adv', 'SHttc10_adv', 'SHttc16_adv', 'SHttc18_adv',
-                      'SHttc6_adv', 'SHttc2_adv', 'SHttc8_adv', 'part_II_survey_ttc', 'payment_sequence1_ttc_adv']
-    ),
-    dict(
         name='da_adv_sequence1',
         display_name="da_adv_sequence1",
         num_demo_participants=12,
@@ -83,17 +60,6 @@ SESSION_CONFIGS = [
 # app_sequence2 app_sequence=['SHttc7', 'SHttc12', 'SHttc19', 'SHttc15', 'SHttc9', 'SHttc5', 'SHttc4', 'SHttc6', 'SHttc20', 'SHttc16'
 # 'SHttc11', 'SHttc1', 'SHttc17', 'SHttc13', 'SHttc2', 'SHttc3', 'SHttc14', 'SHttc8', 'SHttc10', 'SHttc18']
 # payoff round: 11 --> SHttc11
-    dict(
-        name='ttc_sequence2',
-        display_name="ttc_sequence2",
-        num_demo_participants=16,
-        expShortName='quh',
-        expId='18',
-        sessId='159',
-        app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc7', 'SHttc12', 'SHttc19', 'SHttc15', 'SHttc9', 'SHttc5',
-        'SHttc4', 'SHttc6', 'SHttc20', 'SHttc16', 'SHttc11', 'SHttc1', 'SHttc17', 'SHttc13', 'SHttc2', 'SHttc3', 'SHttc14',
-        'SHttc8', 'SHttc10', 'SHttc18', 'part_II_survey_ttc', 'payment_sequence2_ttc']
-    ),
     dict(
         name='da_sequence2',
         display_name="da_sequence2",
