@@ -45,32 +45,10 @@ SESSION_CONFIGS = [
 # app_sequence1 app_sequence=['SHttc11', 'SHttc7', 'SHttc1', 'SHttc12', 'SHttc19', 'SHttc14', 'SHttc9', 'SHttc5', 'SHttc13', 'SHttc17'
 # 'SHttc3', 'SHttc15', 'SHttc20', 'SHttc4', 'SHttc10', 'SHttc16', 'SHttc18', 'SHttc6', 'SHttc2', 'SHttc8']
 # payoff round: 11 --> SHttc3
-    dict(
-        name='da_adv_sequence1',
-        display_name="da_adv_sequence1",
-        num_demo_participants=12,
-        expShortName='quh',
-        expId='18',
-        sessId='159',
-        app_sequence=['part_0_intro_da', 'part_I_da', 'SHda11_adv', 'SHda7_adv', 'SHda1_adv', 'SHda12_adv', 'SHda19_adv',
-        'SHda14_adv', 'SHda9_adv', 'SHda5_adv', 'SHda13_adv', 'SHda17_adv', 'SHda3_adv', 'SHda15_adv', 'SHda20_adv',
-        'SHda4_adv', 'SHda10_adv', 'SHda16_adv', 'SHda18_adv', 'SHda6_adv', 'SHda2_adv', 'SHda8_adv', 'part_II_survey_da',
-        'payment_sequence1_da_adv']
-    ),
+
 # app_sequence2 app_sequence=['SHttc7', 'SHttc12', 'SHttc19', 'SHttc15', 'SHttc9', 'SHttc5', 'SHttc4', 'SHttc6', 'SHttc20', 'SHttc16'
 # 'SHttc11', 'SHttc1', 'SHttc17', 'SHttc13', 'SHttc2', 'SHttc3', 'SHttc14', 'SHttc8', 'SHttc10', 'SHttc18']
 # payoff round: 11 --> SHttc11
-    dict(
-        name='da_sequence2',
-        display_name="da_sequence2",
-        num_demo_participants=16,
-        expShortName='quh',
-        expId='18',
-        sessId='159',
-        app_sequence=['part_0_intro_da', 'part_I_da', 'SHda7', 'SHda12', 'SHda19', 'SHda15', 'SHda9', 'SHda5', 'SHda4',
-        'SHda6', 'SHda20', 'SHda16', 'SHda11', 'SHda1', 'SHda17', 'SHda13', 'SHda2', 'SHda3', 'SHda14', 'SHda8',
-        'SHda10', 'SHda18', 'part_II_survey_da', 'payment_sequence2_da']
-    ),
     dict(
         name='ttc_adv_sequence2',
         display_name="ttc_adv_sequence2",
@@ -83,55 +61,9 @@ SESSION_CONFIGS = [
         'SHttc17_adv', 'SHttc13_adv', 'SHttc2_adv', 'SHttc3_adv', 'SHttc14_adv', 'SHttc8_adv', 'SHttc10_adv',
         'SHttc18_adv', 'part_II_survey_ttc', 'payment_sequence2_ttc_adv']
     ),
-    dict(
-        name='da_adv_sequence2',
-        display_name="da_adv_sequence2",
-        num_demo_participants=16,
-        expShortName='quh',
-        expId='18',
-        sessId='159',
-        app_sequence=['part_0_intro_da', 'part_I_da', 'SHda7_adv', 'SHda12_adv', 'SHda19_adv', 'SHda15_adv', 'SHda9_adv',
-        'SHda5_adv', 'SHda4_adv', 'SHda6_adv', 'SHda20_adv', 'SHda16_adv', 'SHda11_adv', 'SHda1_adv', 'SHda17_adv',
-        'SHda13_adv', 'SHda2_adv', 'SHda3_adv', 'SHda14_adv', 'SHda8_adv', 'SHda10_adv', 'SHda18_adv', 'part_II_survey_da',
-        'payment_sequence2_da_adv']
-    ),
 # app_sequence3 app_sequence=['SHttc20', 'SHttc9', 'SHttc7', 'SHttc16', 'SHttc13', 'SHttc3', 'SHttc4', 'SHttc5', 'SHttc12', 'SHttc15'
 # 'SHttc18', 'SHttc10', 'SHttc11', 'SHttc19', 'SHttc14', 'SHttc2', 'SHttc8', 'SHttc17', 'SHttc1', 'SHttc6']
 # payoff round: 11 --> SHttc18
-    dict(
-        name='ttc_sequence3',
-        display_name="ttc_sequence3",
-        num_demo_participants=12,
-        expShortName='quh',
-        expId='18',
-        sessId='159',
-        app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc20', 'SHttc9', 'SHttc7', 'SHttc16', 'SHttc13', 'SHttc3',
-        'SHttc4', 'SHttc5', 'SHttc12', 'SHttc15', 'SHttc18', 'SHttc10', 'SHttc11', 'SHttc19', 'SHttc14', 'SHttc2', 'SHttc8',
-        'SHttc17', 'SHttc1', 'SHttc6', 'part_II_survey_ttc', 'payment_sequence3_ttc']
-    ),
-    dict(
-        name='da_sequence3',
-        display_name="da_sequence3",
-        num_demo_participants=12,
-        expShortName='quh',
-        expId='18',
-        sessId='159',
-        app_sequence=['part_0_intro_da', 'part_I_da', 'SHda20', 'SHda9', 'SHda7', 'SHda16', 'SHda13', 'SHda3', 'SHda4',
-        'SHda5', 'SHda12', 'SHda15', 'SHda18', 'SHda10', 'SHda11', 'SHda19', 'SHda14', 'SHda2', 'SHda8', 'SHda17', 'SHda1',
-        'SHda6', 'part_II_survey_da', 'payment_sequence3_da']
-    ),
-    dict(
-        name='ttc_adv_sequence3',
-        display_name="ttc_adv_sequence3",
-        num_demo_participants=12,
-        expShortName='quh',
-        expId='18',
-        sessId='159',
-        app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc20_adv', 'SHttc9_adv', 'SHttc7_adv', 'SHttc16_adv',
-        'SHttc13_adv', 'SHttc3_adv', 'SHttc4_adv', 'SHttc5_adv', 'SHttc12_adv', 'SHttc15_adv', 'SHttc18_adv', 'SHttc10_adv',
-        'SHttc11_adv', 'SHttc19_adv', 'SHttc14_adv', 'SHttc2_adv', 'SHttc8_adv', 'SHttc17_adv', 'SHttc1_adv', 'SHttc6_adv',
-        'part_II_survey_ttc', 'payment_sequence3_ttc_adv']
-    ),
     dict(
         name='da_adv_sequence3',
         display_name="da_adv_sequence3",
