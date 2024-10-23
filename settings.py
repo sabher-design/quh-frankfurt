@@ -102,18 +102,6 @@ SESSION_CONFIGS = [
         'SHda17', 'part_II_survey_da', 'payment_sequence4_da']
     ),
     dict(
-        name='ttc_adv_sequence4',
-        display_name="ttc_adv_sequence4",
-        num_demo_participants=12,
-        expShortName='quh',
-        expId='18',
-        sessId='159',
-        app_sequence=['part_0_intro_ttc', 'part_I_ttc', 'SHttc5_adv', 'SHttc2_adv', 'SHttc8_adv', 'SHttc1_adv', 'SHttc19_adv',
-        'SHttc11_adv', 'SHttc16_adv', 'SHttc12_adv', 'SHttc10_adv', 'SHttc14_adv', 'SHttc9_adv', 'SHttc18_adv', 'SHttc7_adv',
-        'SHttc13_adv', 'SHttc15_adv', 'SHttc20_adv', 'SHttc3_adv', 'SHttc4_adv', 'SHttc6_adv', 'SHttc17_adv',
-        'part_II_survey_ttc', 'payment_sequence4_ttc_adv']
-    ),
-    dict(
         name='da_adv_sequence4',
         display_name="da_adv_sequence4",
         num_demo_participants=12,
