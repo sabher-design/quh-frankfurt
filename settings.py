@@ -10,7 +10,14 @@ SESSION_CONFIG_DEFAULTS = dict(
     participation_fee=6.00, # in Euro
     doc=""
 )
-
+ROOMS = [
+    dict(
+        name='FLEX',
+        display_name='FLEX (01-25)',
+        participant_label_file='FLEX.txt',
+        use_secure_urls=False
+    ),
+]
 SESSION_CONFIGS = [
     dict(
         name='ttc_test_no_apps',
@@ -40,7 +47,7 @@ SESSION_CONFIGS = [
         expShortName='',
         expId='',
         sessId='',
-        app_sequence=['part_0_intro_da', 'part_I_da', 'SHda3', 'part_II_survey_da', 'payment_sequence1_da']
+        app_sequence=['part_0_intro_da', 'part_I_da', 'SHda9', 'SHda8', 'payment_app5_da']
     ),
 # app_sequence1 app_sequence=['SHttc11', 'SHttc7', 'SHttc1', 'SHttc12', 'SHttc19', 'SHttc14', 'SHttc9', 'SHttc5', 'SHttc13', 'SHttc17'
 # 'SHttc3', 'SHttc15', 'SHttc20', 'SHttc4', 'SHttc10', 'SHttc16', 'SHttc18', 'SHttc6', 'SHttc2', 'SHttc8']
@@ -73,18 +80,18 @@ SESSION_CONFIGS = [
 # app_sequence3 app_sequence=['SHttc20', 'SHttc9', 'SHttc7', 'SHttc16', 'SHttc13', 'SHttc3', 'SHttc4', 'SHttc5', 'SHttc12', 'SHttc15'
 # 'SHttc18', 'SHttc10', 'SHttc11', 'SHttc19', 'SHttc14', 'SHttc2', 'SHttc8', 'SHttc17', 'SHttc1', 'SHttc6']
 # payoff round: 11 --> SHttc18
-    dict(
-        name='da_adv_sequence3',
-        display_name="da_adv_sequence3",
-        num_demo_participants=12,
-        expShortName='quh',
-        expId='18',
-        sessId='159',
-        app_sequence=['part_0_intro_da', 'part_I_da', 'SHda20_adv', 'SHda9_adv', 'SHda7_adv', 'SHda16_adv', 'SHda13_adv',
-        'SHda3_adv', 'SHda4_adv', 'SHda5_adv', 'SHda12_adv', 'SHda15_adv', 'SHda18_adv', 'SHda10_adv', 'SHda11_adv',
-        'SHda19_adv', 'SHda14_adv', 'SHda2_adv', 'SHda8_adv', 'SHda17_adv', 'SHda1_adv', 'SHda6_adv', 'part_II_survey_da',
-        'payment_app3_da_adv']
-    ),
+    #dict(
+     #   name='da_adv_sequence3',
+     #   display_name="da_adv_sequence3",
+     #   num_demo_participants=12,
+     #   expShortName='quh',
+     #   expId='18',
+     #   sessId='159',
+     #   app_sequence=['part_0_intro_da', 'part_I_da', 'SHda20_adv', 'SHda9_adv', 'SHda7_adv', 'SHda16_adv', 'SHda13_adv',
+     #   'SHda3_adv', 'SHda4_adv', 'SHda5_adv', 'SHda12_adv', 'SHda15_adv', 'SHda18_adv', 'SHda10_adv', 'SHda11_adv',
+     #   'SHda19_adv', 'SHda14_adv', 'SHda2_adv', 'SHda8_adv', 'SHda17_adv', 'SHda1_adv', 'SHda6_adv', 'part_II_survey_da',
+     #   'payment_sequence3_da_adv']
+    #),
 # app_sequence4 app_sequence=['SHttc5', 'SHttc2', 'SHttc8', 'SHttc1', 'SHttc19', 'SHttc11', 'SHttc16', 'SHttc12', 'SHttc10', 'SHttc14'
 # 'SHttc9', 'SHttc18', 'SHttc7', 'SHttc13', 'SHttc15', 'SHttc20', 'SHttc3', 'SHttc4', 'SHttc6', 'SHttc17']
 # payoff round: 11 --> SHttc9
